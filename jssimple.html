@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <title>Word-Number Game</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, max-size=1.0, min-size=1.0, userscalable=no, height=device-height">
+        <meta http-equiv="X-UA-Compatible" content="IE-7">
+        <script src="https://kit.fontawesome.com/45fbaa9681.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="jssimple.css">
+    </head>
+    <body>
+        <main class="container">
+            <form action="https://akadiangames.co/en-us/ke/root/gaming" id="gameWrapper">
+                <label for="g-h">Favorite Word</label>
+                <input type="text" name="word" value="" max="12" min="3" id="word" placeholder="E.g. Door">
+                <br>
+                <label for="number">Favorite Number</label>
+                <input type="number" name="num" value="" id="num" maxlength="10" minlength="3" placeholder="E.g. 5591">
+                <br>
+                <output id="output"></output>
+                <button name="values" onclick="check()" value="Submit">Submit</button>
+                
+            </form>
+        </main>
+        <script src="jssample.js">
+            let word = document.getElementById('word').value;
+
+            let number = document.getElementById('num').value;
+
+            let output = document.getElementById('output').value;
+
+            function check(word, number) {
+                const pickedLetter = word[2];
+                
+                const pickedNum = number[3];
+
+                const combined = pickedLetter + pickedNum;
+
+                return output.innerHTML = combined;
+            }
+
+
+
+        </script>
+    </body>
+</html>

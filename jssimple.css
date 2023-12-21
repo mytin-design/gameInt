@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;300;600;800&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-color: black;
+    --minor-color: #ffffff;
+    --sub-color: #0000ff;
+}
+
+
+.container {
+    border: 0px solid;
+    width: 40%;
+    height: 30vh;
+    margin: 100px auto;
+    border-radius: 10px;
+    background: #eee;
+}
+
+#gameWrapper {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    border: 0px solid var(--sub-color);
+    height: 100%;
+}
+
+input {
+    height: 35px;
+    width: 60%;
+    padding: 10px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    background: var(--main-color);
+    color: var(--minor-color);
+}
+
+button {
+    width: 40%;
+    height: 35px;
+    border-radius: 10px;
+    background: var(--sub-color);
+    color: var(--minor-color);
+    font-weight: 600;
+}
